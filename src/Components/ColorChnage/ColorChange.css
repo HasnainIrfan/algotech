@@ -1,0 +1,225 @@
+.colorChanger {
+  position: absolute;
+  top: 12%;
+  left: 0;
+  transition: 0.8s ease;
+  width: 150px;
+  height: 100px;
+  display: flex;
+  z-index: 1000;
+
+}
+
+.color-l {
+  width: 50px;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+
+}
+
+.color-btn {
+  width: 50px;
+  height: 50%;
+  background-color: white;
+  border-radius: 0px 10px 10px 0px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  text-align: center;
+}
+
+.color-btn>svg {
+  /* color: #d1d1d1; */
+  color: rgba(0, 0, 0, 0.7);
+  animation: setting 3s linear infinite;
+  /* animation-duration: 2s; */
+}
+
+@keyframes setting {
+
+  100% {
+    transform: rotate(360deg);
+  }
+
+}
+
+.color-r {
+  width: 200px;
+  height: 100%;
+  background-color: rgba(255, 255, 255, 0.7);
+  border-radius: 0px 20px 20px 0px;
+}
+
+.color-rt {
+  height: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background-color: transparent;
+  /* background: linear-gradient(rgba(225, 225, 225, 0.9), rgba(225, 225, 225, 0.9)); */
+  border-bottom: 1px solid #666;
+}
+
+.color-rt>h6 {
+  font-family: 'Abel', sans-serif;
+  font-weight: normal;
+  letter-spacing: 2px;
+  font-size: 12px;
+  line-height: 1;
+
+}
+
+.color-rb {
+  height: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  /* background: linear-gradient(rgba(225, 225, 225, 0.9), rgba(225, 225, 225, 0.9)); */
+  background-color: transparent;
+  padding: 5px;
+  position: relative;
+}
+
+.color-rb>div>button {
+  font-family: 'Abel', sans-serif;
+  letter-spacing: 1px;
+  font-size: 12px;
+  border: 1px solid rgba(0, 0, 0, 0.4);
+  background-color: transparent;
+  border-radius: 10px;
+  padding: 3px;
+  color: black;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.3s linear;
+}
+
+.color-rb>div>button:hover {
+  background-color: rgba(0, 0, 0, 0.7);
+  color: white;
+}
+
+.pickerStyle {
+  position: absolute;
+  left: 0;
+  margin-top: 50px;
+  transition: 0.5s ease;
+  transform: translateX(-250px);
+}
+.pickerClose{
+  background-color: white;
+  width: 100%;
+  padding: 5px 10px;
+  display: flex;
+  justify-content: right;
+  align-items: center;
+  text-align: center;
+  border-radius: 12px 12px 0px 0px;
+}
+.pickerStyleOpen {
+  transform: translateX(0px);
+
+}
+
+.pickerStyleClose {
+  transform: translateX(-250px);
+
+}
+
+
+
+
+
+
+
+
+
+
+.colorMain {
+  width: 150px;
+  height: 100px;
+  display: flex;
+  /* transform: translateX(0px); */
+  transition: 0.2s linear;
+  background-color: blue;
+}
+
+.colorMainClose {
+  transform: translateX(-100px);
+}
+
+.colorMainOpen {
+  transform: translateX(0px);
+}
+
+.colorMainActive {
+  transform: translateX(0px);
+}
+
+.colorBox {
+  width: 100px;
+  height: 50%;
+  /* background-color: rgba(0, 0, 0, 0.3); */
+  background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4));
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+  background-color: gold;
+}
+
+.multiColor {
+  width: 100px;
+  height: 50%;
+  /* background-color: rgba(0, 0, 0, 0.3); */
+  background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4));
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+  background-color: palevioletred;
+}
+
+.color {
+  width: 50px;
+  height: 50px;
+  /* background: rgba(100,100,100,0.85); */
+  background-color: white;
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  text-align: center;
+  overflow: hidden;
+  margin-top: 25px;
+
+}
+
+.color>svg {
+  /* color: #d1d1d1; */
+  color: rgba(0, 0, 0, 0.7);
+  animation: setting cubic-bezier(0.95, 0.05, 0.795, 0.035) infinite;
+  animation-duration: 2s;
+}
+
+@keyframes setting {
+
+  100% {
+    transform: rotate(360deg);
+  }
+
+}
+
+/* Dark Mode */
+.darkcolor{
+  background-color: black;
+}
+
+.darkcolor .X::before ,
+.darkcolor .X::after{
+  background-color: white;
+}

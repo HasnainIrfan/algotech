@@ -1,0 +1,201 @@
+.contact-wrapper{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+}
+.contact{
+   max-width: 1100px;
+   padding-left: 15px;
+   padding-right: 15px;
+   margin-left: auto;
+   margin-right: auto;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+   text-align: center;
+   color: black;
+   
+}
+.contact>h1{
+    margin: 0 auto 21px;
+    letter-spacing: 8px;
+    text-align: center;
+    font-size: 40px;
+    font-weight: normal;
+    position: relative;
+
+}
+.contact>h1::before {
+    position: absolute;
+    content: '';
+    width: 100%;
+    height: 1px;
+    background-color: black;
+    bottom: 0;
+    left: 0;
+    animation: heading 3s infinite linear;
+}
+
+.contact-icon{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 30px;
+    transition: 1s linear;
+
+}
+.contact-icon>svg{
+    color: rgba(0, 0, 0, 0.6);
+    margin: 0px 20px;
+    cursor: pointer;
+}
+.contact-icon .black>path{
+    color: black;
+}
+.contact-detail{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 310px;
+
+}
+.contact-detail>h3{
+    color: rgba(0, 0, 0, 0.6);
+    font-weight: 500;
+    line-height: 1.5;
+    font-size: 15px;
+    font-weight: normal;
+    text-align: center;
+    margin-bottom: 5px;
+}
+
+
+.map{
+    width: 100%;
+    height: 100vh;
+    background-color: gray;
+    position: absolute;
+    z-index: 1100;
+    transform: scale(0);
+    transition: 0.7s ease;
+}
+.mapView{
+    transform: scale(1) ;
+}
+iframe{
+    position: absolute;
+    width: 100%;
+    height: 90%;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    right: 0;
+}
+.mapHide{
+    margin-left: 250px;
+    margin-top: -70px;
+    transform: scale(0) rotate(900deg);
+    opacity: 0;
+}
+.MapClose{
+    background-color: white;
+    width: 100%;
+    position: absolute;
+    bottom: 0%;
+    padding: 20px;
+    display: flex;
+    justify-content: right;
+    align-items: center;
+    text-align: center;
+    z-index: 1100;
+}
+.X{
+    width: 30px;
+    height: 30px;
+    position: relative;
+    transition: 0.2s ease;
+    cursor: pointer;
+}
+.X::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    background-color: black;
+    width: 3px;
+    height: 100%;
+    left: 0;
+    transform: rotate(42deg) translate(10px, -9px);
+
+}
+.X::after{
+    content: '';
+    position: absolute;
+    top: 0;
+    background-color: black;
+    width: 3px;
+    height: 100%;
+    right: 0;
+    transform: rotate(-42deg) translate(-9px, -9px);
+}
+.X:hover::before{
+    transform: rotate(400deg) translate(10px, -9px);
+}
+.X:hover::after{
+    transform: rotate(315deg) translate(-9px, -9px);
+
+}
+.appleClose>h1{
+    margin-right: 30px;
+    font-size: 40px;
+}
+/* Dark Mode */
+.darkcontack>h1{
+    color: white;
+    text-shadow: 0px 0px 10px #000 ,0px 0px 10px #000;
+}
+.darkcontack>h1::before{
+    background-color: white;
+}
+.darkcontack .contact-icon>svg>path{
+    color: rgba(255, 255, 255, 0.8);
+}
+.darkcontack .contact-detail>h3{
+    color: white;
+}
+.darkcontack .contact-icon .black>path{
+    color: white;
+    background-color: red;
+}
+.darkcontack .map .MapClose{
+    background-color: black;
+}
+.darkcontack .map .MapClose .X::before ,
+.darkcontack .map .MapClose .X::after{
+    background-color: white;
+}
+@media screen and (max-width:350px) {
+    .contact>h1{
+        letter-spacing: 5px;
+        font-size: 35px;
+    }
+    .contact-icon>svg{
+        margin: 0px 8px;
+    }
+}
+@media screen and (max-width:250px) {
+    .contact>h1{
+        letter-spacing: 3px;
+        font-size: 30px;
+    }
+    .contact-icon>svg{
+        margin: 0px 3px;
+    }
+    .contact-detail>h3{
+        font-size: 14px;
+    }
+}

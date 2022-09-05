@@ -1,0 +1,228 @@
+.projectRequestbox {
+    position: absolute;
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
+    width: 100%;
+    height: 100%;
+    /* width: 50%;
+    height: 70%; */
+    /* transform: translate(50%, 50%); */
+    z-index: 1200;
+    transform: scale(0);
+    transition: 0.5s ease;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+}
+
+.projectboxopen {
+    transform: scale(1);
+}
+
+.projectboxclose {
+    transform: scale(0) rotate(500deg);
+    opacity: 0;
+}
+
+.projectboxclosebtn {
+    background-color: white;
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    padding: 20px;
+    display: flex;
+    justify-content: right;
+    align-items: center;
+    text-align: center;
+}
+
+
+.prbi {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: -50px;
+
+}
+
+.prbi>h1 {
+    font-size: 40px;
+    color: white;
+    text-transform: uppercase;
+    letter-spacing: 8px;
+    margin-bottom: 10px;
+    text-shadow: 0px 0px 10px #000,
+        0px 0px 10px #000,
+        0px 0px 10px #000
+}
+
+.prbi>form>div {
+    display: flex;
+    justify-content: left;
+    text-align: left;
+}
+
+.prbi>form>div>div {
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    text-align: left;
+}
+
+.prbi>form>div>span,
+.prbi>form>div>div>span {
+    color: white;
+    font-size: 13px;
+    margin-left: 10px;
+    font-family: 'Abel', sans-serif;
+    letter-spacing: 1px;
+    line-height: 1.5;
+    font-weight: 500;
+    text-shadow: 0px 0px 10px #000,
+        0px 0px 10px #000,
+        0px 0px 10px #000
+}
+
+.prbi>form>div>input,
+.prbi>form>div>div>input {
+    border: none;
+    outline: none;
+    padding: 10px;
+    border-radius: 6px;
+    margin: 5px;
+    width: 250px;
+    margin-bottom: 5px;
+}
+
+.productEmail {
+    width: 300px;
+}
+
+.prbi>form>div>div>textarea {
+    border: none;
+    outline: none;
+    padding: 10px;
+    border-radius: 5px;
+    margin: 5px;
+    width: 510px;
+    resize: none;
+}
+
+.prbi>form>div:last-child {
+    margin-left: 410px;
+}
+
+.prbi>form>div>button {
+    background-color: transparent;
+    color: white;
+    padding: 7px 25px;
+    font-size: 15px;
+    border: 0;
+    outline: 0;
+    border: 1px solid #ccc;
+    font-family: 'Abel', sans-serif;
+    cursor: pointer;
+    font-weight: 600;
+    letter-spacing: 1.5px;
+    transition: 0.5s linear;
+}
+
+.prbi>form>div>button:hover {
+    border: 1px solid #000;
+    color: #000;
+
+}
+
+.prbi>form>div:nth-of-type(2)>div>input {
+    width: 510px;
+}
+
+/* .done {
+    position: absolute;
+    background-color: white;
+    padding: 40px;
+    border-radius: 10px;
+    transition: 1s linear;
+    top: 0;
+    transform: translateY(-200px);
+    z-index: 2;
+}
+
+.doneVisible {
+    transform: translateY(0px);
+} */
+
+
+@media screen and (max-width:600px) {
+
+    .prbi>form>div>input,
+    .prbi>form>div>div>input {
+        width: 200px;
+        padding: 6px;
+    }
+
+    .prbi>form>div:nth-of-type(2)>div>input,
+    .prbi>form>div>div>textarea {
+        width: 410px;
+        padding: 5px;
+    }
+
+    .prbi>form>div>div>textarea {
+        height: 120px;
+    }
+
+    .prbi>form>div:last-child {
+        margin-left: 310px;
+    }
+
+    .prbi>h1 {
+        font-size: 30px;
+        letter-spacing: 5px;
+    }
+}
+
+@media screen and (max-width:460px) {
+
+    .prbi>form>div>input,
+    .prbi>form>div>div>input {
+        width: 150px;
+    }
+
+    .prbi>form>div:nth-of-type(2)>div>input,
+    .prbi>form>div>div>textarea {
+        width: 310px;
+    }
+
+    .prbi>form>div:last-child {
+        margin-left: 210px;
+    }
+
+    .prbi>h1 {
+        font-size: 25px;
+        letter-spacing: 3px;
+    }
+}
+
+@media screen and (max-width:370px) {
+
+    .prbi>form>div>input,
+    .prbi>form>div>div>input {
+        width: 120px;
+    }
+
+    .prbi>form>div:nth-of-type(2)>div>input,
+    .prbi>form>div>div>textarea {
+        width: 250px;
+    }
+
+    .prbi>form>div:last-child {
+        margin-left: 150px;
+    }
+
+    .prbi>h1 {
+        font-size: 25px;
+        letter-spacing: 3px;
+    }
+}

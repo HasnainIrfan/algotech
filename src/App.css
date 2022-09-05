@@ -1,0 +1,64 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+
+}
+
+body {
+  font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 16px;
+  line-height: 1.4;
+  /* color: rgba(255, 255, 255, 0.5); */
+  overflow: hidden;
+}
+
+h1 {
+  font-family: 'Abel', sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+h2,
+h3,
+h4,
+h5,
+h6{
+  margin: 0;
+  padding: 0;
+}
+
+a{
+  text-decoration: none;
+}
+
+.bg{
+  background: linear-gradient(rgba(255, 255, 255, 0.6) , rgba(225, 225, 225, 0.87)) , url(./Assets/Img/bg.jpg);
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  width: 100%;
+  min-height: 100vh;
+  max-height: 100%;
+  overflow: hidden;
+}
+.bgDark{
+  background: linear-gradient(rgba(0, 0, 0, 0.6) , rgba(0, 0, 0, 0.6)) , url(./Assets/Img/bg.jpg);
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  width: 100%;
+  min-height: 100vh;
+  max-height: 100%;
+  overflow: hidden;
+}
+.dark>h1{
+  color: white;
+  z-index: 2;
+  text-shadow: 0px 0px 10px #000 ,0px 0px 10px #000;
+}
+.dark>h6{
+  color: white;
+  text-shadow: 0px 0px 10px #111 ,0px 0px 10px #111 ;
+  z-index: 2;
+}

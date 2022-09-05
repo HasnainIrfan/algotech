@@ -1,0 +1,495 @@
+ .product-wrapper {
+     width: 100%;
+     height: 100vh;
+     display: flex;
+     justify-content: center;
+ }
+
+ .product {
+     max-width: 1400px;
+     width: 100%;
+     padding-left: 15px;
+     padding-right: 15px;
+     margin-left: auto;
+     margin-right: auto;
+     display: flex;
+     flex-direction: column;
+     justify-content: center;
+     align-items: center;
+     text-align: center;
+     color: black;
+
+ }
+
+ .product>h1 {
+     margin: 0 auto 30px;
+     letter-spacing: 8px;
+     text-align: center;
+     font-size: 40px;
+     font-weight: normal;
+     text-transform: uppercase;
+     position: relative;
+ }
+
+ .product>h1::before {
+     position: absolute;
+     content: '';
+     width: 100%;
+     height: 1px;
+     background-color: black;
+     bottom: 0;
+     left: 0;
+     animation: heading 3s infinite linear;
+ }
+
+ @keyframes heading {
+     0% {
+         transform: scaleX(0);
+     }
+
+     50% {
+         transform: scaleX(1);
+     }
+
+     100% {
+         transform: scaleX(0);
+     }
+ }
+
+ */ #app {
+     display: flex;
+     justify-content: center;
+     align-items: center;
+ }
+
+ .swiper {
+     width: 350px;
+     height: 350px;
+ }
+
+ .swiper-slide {
+     border-radius: 18px;
+     font-size: 22px;
+     font-weight: bold;
+     color: black;
+     position: relative;
+ }
+
+ .slider-img {
+     width: 100%;
+     height: 58%;
+     overflow: hidden;
+ }
+
+ .slider-img>img {
+     width: 100%;
+     height: 100%;
+ }
+
+ .slider-img1 {
+     background: url(../../Assets/Img/linkshort.png);
+     background-size: 100%;
+     background-repeat: no-repeat;
+     background-position: center center;
+ }
+
+ .slider-img2 {
+     background: url(../../Assets/Img/fitclub.png);
+     background-size: 100%;
+     background-repeat: no-repeat;
+     background-position: center center;
+ }
+
+ .slider-img3 {
+     background: url(../../Assets/Img/litecion.png);
+     background-size: 100%;
+     background-repeat: no-repeat;
+     background-position: center center;
+ }
+
+ .slider-img4 {
+     background: url(../../Assets/Img/protfolio.png);
+     background-size: 100%;
+     background-repeat: no-repeat;
+     background-position: center center;
+ }
+
+ .slider-img5 {
+     background: url(../../Assets/Img/Car1.png);
+     background-size: 100%;
+     background-repeat: no-repeat;
+     background-position: center center;
+ }
+
+ .swiper-slide>img {
+     width: 100%;
+ }
+
+ .swiper-slide>h5 {
+     position: absolute;
+     z-index: 999;
+     top: 0;
+     width: 100%;
+     height: 100%;
+     background-color: rgba(0, 0, 0, 0.4);
+     color: white;
+     display: flex;
+     text-align: center;
+     align-items: center;
+     justify-content: center;
+     font-size: 20px;
+     text-transform: uppercase;
+ }
+
+ .swiper-slide>h1 {
+     letter-spacing: 8px;
+     text-align: center;
+     font-size: 40px;
+     font-weight: normal;
+     margin-bottom: 0;
+ }
+
+ .swiper-slide>a>h3,
+ .swiper-slide>h3 {
+     letter-spacing: 8px;
+     text-align: center;
+     font-size: 16px;
+     font-weight: 600;
+     cursor: pointer;
+     color: rgb(78, 77, 77);
+     margin-top: -5px;
+ }
+
+ .swiperlr {
+     position: absolute;
+     right: 0;
+     background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8));
+     color: white;
+     height: 75px;
+     bottom: 0;
+     border-radius: 100% 0px 0px 0px;
+     font-size: 12px;
+     border: none;
+     outline: none;
+     font-family: 'Abel', sans-serif;
+     line-height: 1.1;
+     width: 70px;
+     padding: 10px 0px 0px 10px;
+     transform: translate(50px, 50px);
+     transition: 0.5s ease;
+     cursor: pointer;
+
+ }
+
+ .swiperlr:hover,
+ .swiperlf:hover {
+     background: linear-gradient(rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0.9));
+
+     color: black;
+ }
+
+ .swiper-slide:hover .swiperlr,
+ .swiper-slide:hover .swiperlf,
+ .swiper-slide:hover .swiperlb {
+     transform: translate(0px, 0px);
+
+ }
+
+ .swiperlf {
+     font-family: 'Abel', sans-serif;
+     line-height: 1.1;
+     position: absolute;
+     left: 0;
+     background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8));
+     color: white;
+     height: 75px;
+     bottom: 0;
+     border-radius: 0px 100% 0px 0px;
+     border: none;
+     outline: none;
+     text-align: center;
+     padding: 5px;
+     width: 70px;
+     font-size: 11.5px;
+     padding: 5px 15px 0px 0px;
+     transform: translate(-50px, 50px);
+     transition: 0.5s ease;
+     cursor: pointer;
+ }
+
+ .swiperlb {
+     position: absolute;
+     background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8));
+     color: white;
+     bottom: 0;
+     border-radius: 100% 100% 0px 0px;
+     border: none;
+     outline: none;
+     text-align: center;
+     padding: 5px;
+     width: 210px;
+     height: 50px;
+     left: 20%;
+     transform: translate(0px, 40px);
+     transition: 0.5s ease;
+     cursor: pointer;
+     padding: 5px;
+     transition-delay: 0.3s;
+ }
+
+ .swiperlb:hover {
+     background: linear-gradient(rgba(88, 88, 88, 0.8), rgba(0, 0, 0, 0.8));
+ }
+
+ .swiperlb>a {
+     letter-spacing: 2px;
+     font-weight: 500;
+     text-transform: uppercase;
+     font-size: 11.5px;
+     font-family: 'Abel', sans-serif;
+     line-height: 1.1;
+     color: white;
+ }
+
+ .swiperLinkBtn {
+     background-color: transparent;
+     text-transform: uppercase;
+     font-size: 13px;
+     border: 1px solid rgba(0, 0, 0, 0.5);
+     color: rgba(0, 0, 0, 0.5);
+     padding: 10px 30px;
+     letter-spacing: 2px;
+     font-weight: 500;
+     position: relative;
+     margin-top: 20px;
+ }
+
+ .swiperLinkBtn::before {
+     content: '';
+     position: absolute;
+     width: 100%;
+     height: 1px;
+     background-color: black;
+     bottom: 0;
+     left: 0;
+     transform: scaleX(0);
+     transition: 0.5s ease;
+     transform-origin: left;
+ }
+
+ .swiperLinkBtn::after {
+     content: '';
+     position: absolute;
+     height: 100%;
+     width: 1px;
+     top: 0;
+     right: 0;
+     background-color: black;
+     transition: 0.5s ease;
+     transform: scaleY(0);
+     transform-origin: bottom;
+     transition-delay: 0.4s;
+ }
+
+ .swiperLinkBtn>a:hover {
+     color: #000;
+ }
+
+ .swiperLinkBtn:hover::before {
+     transform: scaleX(1);
+ }
+
+ .swiperLinkBtn:hover::after {
+     transform: scaleY(1);
+ }
+
+ /* .swiper-slide>button {
+     background-color: transparent;
+     text-transform: uppercase;
+     font-size: 13px;
+     border: 1px solid rgba(0, 0, 0, 0.5);
+     color: rgba(0, 0, 0, 0.5);
+     padding: 10px 30px;
+     letter-spacing: 2px;
+     font-weight: 500;
+     transition: 0.5s ease;
+     margin-top: 20px;
+ } */
+ .swiper-slide {
+     background: linear-gradient(rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.9));
+ }
+
+ /* Dark Mode */
+
+ .darkproduct {
+     background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8));
+ }
+
+ .dark>h1::before {
+     background-color: white;
+ }
+
+ .darkproduct>h1 {
+     color: white;
+ }
+
+ .darkproduct>h3 {
+     color: #ccc;
+ }
+
+ .dark .projectRequestbox .projectboxclosebtn {
+     background-color: black;
+ }
+
+ .dark .projectRequestbox .projectboxclosebtn .X::before,
+ .dark .projectRequestbox .projectboxclosebtn .X::after {
+     background-color: white
+ }
+
+ .darkproduct>button,
+ .darkproduct>a>button {
+     background: white;
+     color: black;
+     font-weight: 700;
+     transition: 0.5s ease;
+ }
+
+ .darkproduct>button>a {
+     color: black;
+     font-weight: 700;
+     transition: 0.5s ease;
+ }
+
+ .darkproduct>button:hover,
+ .darkproduct>a>button:hover {
+     background: #ccc;
+     color: #000;
+
+ }
+
+ .done {
+    position: absolute;
+    background-color: white;
+    border-radius: 10px;
+    transition: 0.5s linear;
+    top: 0;
+    transform: translateY(-200px);
+    z-index: 2;
+    padding: 0;
+}
+.done>h1{
+    padding: 30px;
+}
+.done>h2{
+    background-color: #000;
+    color: white;
+    text-align: right;
+    padding: 5px 10px;
+    width: 100%;
+    cursor: pointer;
+}
+
+.doneVisible {
+    transform: translateY(0px);
+}
+
+ @media screen and (max-width:500px) {
+     .swiper {
+         width: 250px;
+         height: 250px;
+     }
+
+     .product>h1 {
+         font-size: 35px;
+         letter-spacing: 5px;
+     }
+
+     .swiper-slide>h1 {
+         font-size: 30px;
+         letter-spacing: 4px;
+     }
+
+     .swiperlr {
+         width: 50px;
+         height: 50px;
+         font-size: 10px;
+         line-height: 1;
+     }
+
+     .swiperlf {
+         width: 50px;
+         height: 50px;
+         font-size: 10px;
+         line-height: 1;
+     }
+
+     .swiperlb {
+         left: 20%;
+         width: 150px;
+         height: 40px;
+         transform: translate(0px, 30px);
+     }
+
+     .swiperlb>a {
+         font-size: 10px;
+     }
+
+     .swiper-slide>h3 {
+         letter-spacing: 5px;
+         font-size: 12px;
+     }
+
+     /* .swiper-slide>button {
+         margin-top: 15px;
+         font-size: 10px;
+         padding: 7px 12px;
+     } */
+ }
+
+ @media screen and (max-width:300px) {
+     .swiper {
+         width: 200px;
+         height: 200px;
+     }
+
+     .product>h1 {
+         font-size: 25px;
+         letter-spacing: 3px;
+     }
+
+     .swiper-slide>h1 {
+         font-size: 20px;
+         letter-spacing: 2px;
+     }
+
+     .swiperlr {
+         width: 40px;
+         height: 40px;
+         font-size: 8px;
+         line-height: 1;
+     }
+
+     .swiperlf {
+         width: 40px;
+         height: 40px;
+         font-size: 7px;
+         line-height: 1;
+     }
+
+     .swiperlb {
+         left: 20%;
+         width: 120px;
+         height: 30px;
+         transform: translate(0px, 25px);
+     }
+
+     .swiperlb>a {
+         font-size: 8px;
+     }
+
+     /* .swiper-slide>button {
+         margin-top: 15px;
+         font-size: 10px;
+         padding: 7px 12px;
+     } */
+ }

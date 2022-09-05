@@ -1,0 +1,365 @@
+.navbar {
+    background-color: white;
+    position: fixed;
+    width: 100%;
+    transition: 0.5s linear;
+    bottom: 0;
+    overflow: hidden;
+    z-index: 1000;
+}
+
+.navbarHand {
+    background-color: white;
+    position: fixed;
+    width: 100%;
+    transition: 0.5s ease;
+    bottom: 88.5%;
+    z-index: 1000
+}
+
+
+.navbar-wrapper {
+    max-width: 1400px;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+    position: relative;
+}
+
+.navbar-heading {
+    display: flex;
+    justify-content: left;
+    width: 15%;
+    text-align: left;
+}
+
+.navbar-heading>a>h1 {
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    font-size: 24px;
+    font-weight: 500;
+    cursor: pointer;
+    margin-right: 100px;
+    width: 100%;
+    color: #000;
+}
+
+.navbar-menu>a {
+    text-decoration: none;
+}
+
+.navbar-heading>a>h1>span {
+    text-transform: capitalize;
+    font-weight: 700;
+    font-size: 12px;
+    margin-left: -10px;
+    letter-spacing: 1px;
+    color: rgba(0, 0, 0, 0.9);
+}
+
+.navbar-menu {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 70%;
+}
+
+.navbar-menu>ul {
+    width: 100%;
+    display: flex;
+    list-style-type: none;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-right: 50px;
+}
+
+.navbar-menu>ul>li,
+.navbar-menu>ul>a {
+    font-size: 14px;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    color: rgba(0, 0, 0, 0.5);
+    font-weight: 500;
+    cursor: pointer;
+    margin: 0 12px;
+    position: relative;
+    padding: 5px 0px;
+    transition: 0.5s linear;
+}
+
+a {
+    text-decoration: none;
+    color: rgba(0, 0, 0, 0.5);
+
+}
+
+.navbar-menu .active {
+    color: black;
+}
+.abc .active {
+    color: black;
+}
+.navbar-menu>ul>li:hover,
+.navbar-menu>ul>a>li:hover {
+    color: #000;
+}
+
+.navbar-menu>ul>li::before,
+.navbar-menu>ul>li::after,
+.navbar-menu>ul>a>li::before,
+.navbar-menu>ul>a>li::after {
+    content: '';
+    width: 100%;
+    height: 1px;
+    background-color: black;
+    position: absolute;
+    left: 0;
+    transform: scaleX(0);
+    transition: 0.5s ease;
+}
+
+.navbar-menu>ul>li::before,
+.navbar-menu>ul>a>li::before {
+    top: 0;
+    transform-origin: left;
+}
+
+.navbar-menu>ul>li::after,
+.navbar-menu>ul>a>li::after {
+    bottom: 0;
+    transform-origin: right;
+}
+
+.navbar-menu>ul>li:hover::before,
+.navbar-menu>ul>li:hover::after,
+.navbar-menu>ul>a>li:hover::before,
+.navbar-menu>ul>a>li:hover::after {
+    transform: scaleX(1);
+}
+
+.navbar-dc {
+    display: flex;
+    justify-content: right;
+    width: 15%;
+    text-align: right;
+}
+
+.navbar-dc>h6 {
+    font-family: 'Abel', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.toggle {
+    display: none;
+    cursor: pointer;
+}
+
+.toggles {
+    margin-right: -470%;
+}
+
+.bar {
+    width: 30px;
+    height: 3px;
+    background-color: rgba(0, 0, 0, 0.5);
+    margin: 7px auto;
+    display: block;
+    transition: 0.5s ease-out;
+    transition-delay: 0.4s;
+    border-radius: 5px;
+}
+
+.toggles .bar:nth-child(2) {
+    opacity: 0;
+}
+
+.toggles .bar:nth-child(1) {
+    transform: translateY(10px) rotate(490deg);
+}
+
+.toggles .bar:nth-child(3) {
+    transform: translateY(-10px) rotate(-490deg);
+}
+
+/* HAND MENU */
+
+.abc {
+    background: linear-gradient(rgba(255, 255, 255, 0.6), rgba(225, 225, 225, 0.87)), url(../../Assets/Img/bg.jpg);
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    width: 100%;
+    min-height: 100vh;
+    max-height: 100%;
+    overflow: hidden;
+    position: absolute;
+    top: 100%;
+    width: 100%;
+    z-index: 1000;
+    left: 0;
+}
+
+.abc>ul {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    list-style-type: none;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-top: 70px;
+}
+
+.abc>ul>li,
+.abc>ul>a>li {
+    font-size: 14px;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    color: rgba(0, 0, 0, 0.5);
+    font-weight: 500;
+    cursor: pointer;
+    position: relative;
+    padding: 5px 0px;
+    margin: 15px 0px;
+    transition: 0.5s linear;
+}
+
+
+.abc>ul>li:hover,
+.abc>ul>a>li:hover {
+    color: #000;
+}
+
+.abc>ul>li::before,
+.abc>ul>li::after,
+.abc>ul>a>li::before,
+.abc>ul>a>li::after {
+    content: '';
+    width: 100%;
+    height: 1px;
+    background-color: black;
+    position: absolute;
+    left: 0;
+    transform: scaleX(0);
+    transition: 0.5s ease;
+}
+
+.abc>ul>li::before,
+.abc>ul>a>li::before {
+    top: 0;
+    transform-origin: left;
+}
+
+.abc>ul>li::after,
+.abc>ul>a>li::after {
+    bottom: 0;
+    transform-origin: right;
+}
+
+.abc>ul>li:hover::before,
+.abc>ul>li:hover::after,
+.abc>ul>a>li:hover::before,
+.abc>ul>a>li:hover::after {
+    transform: scaleX(1);
+}
+
+.footerRes {
+    font-size: 14px;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    color: rgba(0, 0, 0, 0.5);
+    font-weight: 500;
+    margin-top: 100px;
+    transition: 0.5s linear;
+    display: none;
+}
+
+/* End */
+
+/* Dark MODE */
+
+.darknavbar .navbar-heading>a>h1 {
+    color: white;
+}
+
+.darknavbar .navbar-heading>a>h1>span {
+    color: white;
+}
+
+.darknavbar .navbar-menu>ul>li>a {
+    color: white;
+}
+
+.darknavbar .navbar-menu>ul>li::before,
+.darknavbar .navbar-menu>ul>li::after {
+    background-color: white;
+}
+
+.darknavbar .navbar-menu .active {
+    color: #ccc;
+}
+.darknavbar .abc>ul>li .active {
+    color:#aaa;
+}
+
+.darknavbar .navbar-dc>h6{
+    color: white;
+    font-weight: normal;
+}
+.darknavbar .bar{
+    background-color: white;
+}
+.darknavbar .abc{
+    background: linear-gradient(rgba(0, 0, 0, 0.6) , rgba(0, 0, 0, 0.87)) , url(../../Assets/Img/bg.jpg);
+}
+.darknavbar .abc>ul>li>a{
+    color: white;
+}
+.darknavbar .abc>ul>li::before,
+.darknavbar .abc>ul>li::after {
+    background-color: white;
+}
+.darknavbar .abc .active {
+    color: #eee;
+}
+.darknavbar .abc .footerRes>h1{
+    color: white;
+}
+@media screen and (max-width:1200px) {
+    .navbar-menu>ul {
+        display: none;
+    }
+
+    .footerRes {
+        display: block;
+    }
+
+    .navbar-dc>h6 {
+        display: none;
+    }
+
+    .toggle {
+        display: block;
+    }
+
+}
+
+@media screen and (max-width:250px) {
+
+    .navbar-heading {
+        display: none;
+    }
+
+    .toggles {
+        margin-left: 50px;
+    }
+}

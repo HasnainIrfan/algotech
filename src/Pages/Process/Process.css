@@ -1,0 +1,161 @@
+.process-wrapper {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+}
+
+.process {
+    max-width: 1100px;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: black;
+    text-align: center;
+}
+
+.process>h1 {
+    margin: 0 auto 21px;
+    letter-spacing: 8px;
+    text-align: center;
+    font-size: 40px;
+    font-weight: normal;
+    position: relative;
+}
+
+.process>h1::before {
+    position: absolute;
+    content: '';
+    width: 100%;
+    height: 1px;
+    background-color: black;
+    bottom: 0;
+    left: 0;
+    animation: heading 3s infinite linear;
+}
+
+.process-icon {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.process-icon>svg {
+    color: rgba(0, 0, 0, 0.6);
+    margin: 0px 20px;
+}
+
+.icon-detail {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: black;
+}
+
+.icon-detail>h1 {
+    margin: 0 0 15px 0;
+    letter-spacing: 3px;
+    font-weight: 500;
+    line-height: 1.88;
+    text-transform: uppercase;
+    font-size: 16px;
+}
+
+.icon-detail>p {
+    font-size: 16px;
+    color: rgba(0, 0, 0, 0.6);
+    font-weight: 500;
+    margin: 0 0 30px 0;
+    line-height: 1.88;
+    letter-spacing: 0.5px;
+    max-width: 30rem;
+    text-align: center;
+}
+
+.process-icon .black>path {
+    color: black;
+}
+
+/* Dark Mode */
+
+.darkProcess>h1 {
+    color: white;
+    text-shadow: 0px 0px 10px #000 ,0px 0px 10px #000;
+}
+.darkProcess>h1::before {
+    background-color: white;
+}
+
+.darkProcess .process-icon>svg>path {
+    color: rgba(255, 255, 255, 0.8);
+}
+
+.darkProcess .process-icon .black>path {
+    color: white;
+}
+
+.darkProcess .icon-detail>h1 {
+    color: white;
+}
+
+.darkProcess .icon-detail>p {
+    color: #bbb;
+}
+
+@media screen and (max-width:550px) {
+    .process>h1 {
+        font-size: 37px;
+        letter-spacing: 4px;
+    }
+
+    .icon-detail>p {
+        max-width: 20rem;
+    }
+
+    .process-icon>svg {
+        margin: 0px 15px;
+    }
+}
+
+@media screen and (max-width:300px) {
+    .process>h1 {
+        font-size: 30px;
+        letter-spacing: 2px;
+    }
+
+    .icon-detail>p {
+        max-width: 15rem;
+        line-height: 1.7;
+        font-size: 14px;
+    }
+
+    .process-icon>svg {
+        margin: 0px 10px;
+    }
+}
+
+@media screen and (max-width:250px) {
+    .process>h1 {
+        font-size: 25px;
+        letter-spacing: 2px;
+    }
+
+    .icon-detail>p {
+        max-width: 15rem;
+        line-height: 1.7;
+        font-size: 14px;
+    }
+
+    .process-icon>svg {
+        margin: 0px 4px;
+    }
+}
